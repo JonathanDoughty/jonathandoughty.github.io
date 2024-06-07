@@ -66,6 +66,10 @@ html, body {
   height: 100%;
 }
 
+#reset .easy-button-button.disabled {
+    height: 0;
+}
+
 /*
 Support for browsers that DON'T support Flexbox uses 100% height on the map-container defined above.
 Map will at least render, for the small amount of browsers that DON'T support flexbox. Users will just have to scroll abit ¯\_(ツ)_/¯

@@ -13,12 +13,11 @@
                     About This Map
                 </h1>
             </div>
-            <div class="map-container">
-
-                <p>
-                    This map represents stopping points and significant features encountered during the
-                    May 16 - 26 2024
-                    <a href="https://www.roadscholar.org/find-an-adventure/2814/The-Best-of-Utah--s-Grand-Circle-of-Parks-and-Monuments" target="explainer">Road Scholar 2814 - The Best of Utah's Grand Circle of Parks and Monument</a> trip visiting
+            <p>
+                This map represents stopping points and significant features encountered during the
+                May 16 - 26 2024
+                <a href="https://www.roadscholar.org/find-an-adventure/2814/The-Best-of-Utah--s-Grand-Circle-of-Parks-and-Monuments" target="explainer">Road Scholar 2814 - The Best of Utah's Grand Circle of Parks and Monument</a>
+                trip visiting
                     <em>Snow Canyon State Park</em>,
                     <em>Zion National Park</em>,
                     <em>Bryce Canyon National Park</em>,
@@ -29,80 +28,79 @@
                     <em>Colorado River</em>,
                     <em>Lake Powell</em>,
                     <em>Antelope Slot Canyon</em> and others.
-                </p>
-                <p>
-                    This map was made possible by the capabilities provided by several open-source projects:
-                </p>
-                <ul>
-                    <li>
-                        <a href="https://organicmaps.app/" target="explainer">Organic Maps</a> - a mobile app that provides offline
-                        map display and with which I record "waypoints" wherever I stop on a tour.
-                    </li>
-                    <li>
-                        <a href="https://www.openstreetmap.org/about" target="explainer">Open Street Map data</a> - which provides
-                        the known feature locations and descriptions that are displayed and captured via
-                        Organic Maps.
-                    </li>
-                    <li>
-                        <a href="https://leafletjs.com/" target="explainer">Leaflet</a> -
-                        "an open-source JavaScript library for mobile-friendly interactive maps" - the fundamental
-                        basis for this map's display.
-                    </li>
-                    <li>
-                        The <a href="https://github.com/leaflet-extras/leaflet-providers" target="explainer" ">Leaflet-providers</a> extension
-                        for selected free base map tile providers.
-                    </li>
-                    <li>
-                        The <a href="https://github.com/Leaflet/Leaflet.markercluster" target="explainer">Marker Cluster</a>
-                        Leaflet Plugin to aggregate symbols that appear close to one another.
-                    </li>
-                    <li>
-                        <a href="https://pypi.org/project/kml2geojson/" target="explainer">kml2geojson</a> - a Python library that
-                        I used to convert the
-                        <a href="https://en.wikipedia.org/wiki/Keyhole_Markup_Language" target="explainer">KML</a> format that
-                        Organic Maps exports into the more browser friendly
-                        <a href="https://en.wikipedia.org/wiki/GeoJSON" target="explainer">GeoJSON</a> format that gets used as part
-                        of this Leaflet map display.
-                    </li>
-                </ul>
+            </p>
+            <h2>Usage</h2>
+            <p>
+                The code arranges that the map will initially be zoomed to the geographic
+                extent of all the marker locations.
+            </p>
+            <p>
+                Markers that have not been clustered appear as blue bubbles - clicking one
+                of those will display a pop up of the marker's description. Markers that are in
+                close proximity to others will be clustered and colored to indicate the number
+                of markers at that location. Clicking on one of these will zoom the map to
+                enclose just those markers and expand the cluster into smaller clusters and
+                distinct markers.
+            </p>
+            <p>
+                Markers may have either the names of distinct features as provided by Open
+                Street Map or, in cases where I created a marker in the middle of nowhere,
+                whatever I managed to type to describe that location.
+            </p>
+            <p>
+                Select from a number of base maps using the layer chooser in the upper right corner.
+            </p>
+            <p>
+                Map Zoom levels can be manually controlled using the + and - controls in the upper left.
+            </p>
 
-
-                <p>
-                    That plus a little bit of JavaScript coding to extract information from the marker
-                    data and add those as pop up text descriptions for the markers as well as put the whole thing
-                    into a web accessible form.
-                </p>
-
-                <h2>Usage</h2>
-
-                <p>
-                    The code arranges that the map will initially be zoomed to the geographic
-                    extent of all the marker locations.
-                </p>
-
-                <p>
-                    Markers that have not been clustered appear as blue bubbles - clicking one
-                    of those will display a pop up of the marker's description. Markers that are in
-                    close proximity to others will be clustered and colored to indicate the number
-                    of markers at that location. Clicking on one of these will zoom the map to
-                    enclose just those markers and expand the cluster into smaller clusters and
-                    distinct markers.
-                </p>
-
-                <p>
-                    Markers may have either the names of distinct features as provided by Open
-                    Street Map or, in cases where I created a marker in the middle of nowhere,
-                    whatever I managed to type to describe that location.
-                </p>
-
-                <p>
-                    Select from a number of base maps using the layer chooser in the upper right corner.
-                </p>
-
-                <p>
-                    Map Zoom levels can be manually controlled using the + and - controls in the upper left.
-                </p>
-            </div>
+            <h2>Credits</h2>
+            <p>
+                This map was made possible by the capabilities provided by several open-source projects:
+            </p>
+            <ul>
+                <li>
+                    <a href="https://organicmaps.app/" target="explainer">Organic Maps</a> - free a mobile app
+                    that provides offline map display and with which I record "waypoints" wherever I stop on
+                    a tour.
+                </li>
+                <li>
+                    <a href="https://www.openstreetmap.org/about" target="explainer">Open Street Map data</a> -
+                    which provides the known feature locations and descriptions that are
+                    displayed and saved via Organic Maps.
+                </li>
+                <li>
+                    <a href="https://leafletjs.com/" target="explainer">Leaflet</a> -
+                    "an open-source JavaScript library for mobile-friendly interactive maps" - the fundamental
+                    basis for this map's display.
+                </li>
+                <li>
+                    The <a href="https://github.com/leaflet-extras/leaflet-providers" target="explainer"
+                        >Leaflet-providers</a> extension for selected free base map tile providers.
+                </li>
+                <li>
+                    The <a href="https://github.com/Leaflet/Leaflet.markercluster" target="explainer"
+                        >Marker Cluster</a>
+                    Leaflet Plugin to aggregate symbols that appear close to one another.
+                </li>
+                <li>
+                    <a href="https://github.com/cliffcloud/Leaflet.EasyButton" target="explainer"
+                    >EasyButton</a> a leaflet control to add the reset button.
+                </li>
+                <li>
+                    <a href="https://pypi.org/project/kml2geojson/" target="explainer">kml2geojson</a>
+                    - a Python library that I used to convert the
+                    <a href="https://en.wikipedia.org/wiki/Keyhole_Markup_Language" target="explainer">KML</a>
+                    format that Organic Maps exports into the more browser friendly
+                    <a href="https://en.wikipedia.org/wiki/GeoJSON" target="explainer">GeoJSON</a>
+                    format that gets used as part of this Leaflet map display.
+                </li>
+            </ul>
+            <p>
+                That plus a little bit of JavaScript coding to extract information from the marker
+                data and add those as pop up text descriptions for the markers as well as compose
+                the whole thing into a web accessible form.
+            </p>
         </div>
     </body
 </html>
