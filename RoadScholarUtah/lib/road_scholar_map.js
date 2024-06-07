@@ -68,8 +68,8 @@ This map was made possible by the capabilities of several open-source projects:
 </p>
 <ul>
 <li>
-<a href="https://organicmaps.app/" target="explainer">Organic Maps</a> - free a mobile app
-that provides offline map display and with which I record "waypoints" wherever I stop on
+<a href="https://organicmaps.app/" target="explainer">Organic Maps</a> - a free mobile app
+that provides offline map display and which I use to record "waypoints" wherever I stop on
 a tour.
 </li>
 <li>
@@ -84,33 +84,33 @@ basis for this map&rsquo;s display.
 </li>
 <li>
 The <a href="https://github.com/leaflet-extras/leaflet-providers" target="explainer"
->Leaflet-providers</a> extension for selected free base map tile providers.
+>Leaflet-providers</a> extension for selected free base map tile providers - as shown in the
+layer control on the upper right.
 </li>
 <li>
 The <a href="https://github.com/Leaflet/Leaflet.markercluster" target="explainer"
 >Marker Cluster</a>
-Leaflet Plugin to aggregate symbols that appear close to one another.
+Leaflet Plugin to aggregate markers that would appear too close to one another and
+symbolize them as the numbered circles.
 </li>
 <li>
 <a href="https://github.com/cliffcloud/Leaflet.EasyButton" target="explainer"
->EasyButton</a> a leaflet control to add the reset button.
+>EasyButton</a> a leaflet control to add buttons to provide the reset map and this popup display
+capabilities.
 </li>
 <li>
 <a href="https://pypi.org/project/kml2geojson/" target="explainer">kml2geojson</a>
 - a Python library that I used to convert the
 <a href="https://en.wikipedia.org/wiki/Keyhole_Markup_Language" target="explainer">KML</a>
-format that Organic Maps exports into the more browser friendly
+format data that Organic Maps exports into the more browser / JavaScript friendly
 <a href="https://en.wikipedia.org/wiki/GeoJSON" target="explainer">GeoJSON</a>
 format that gets used as part of this Leaflet map display.
 </li>
 </ul>
 <p>
-That plus a little bit of JavaScript coding to extract information from the marker
+That plus a bit of JavaScript coding to extract information from the marker
 data and add those as pop up text descriptions for the markers as well as compose
-the whole thing into a web accessible form.
-</p>
-<p>
-Plus time expended in futzing with this, adding extra controls, this pop up text, ...
+the whole thing into a web accessible form and implement the extras.
 </p>
 </div>
 </div>
