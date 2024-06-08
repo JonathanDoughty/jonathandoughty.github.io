@@ -1,21 +1,8 @@
 /* Slightly adapted from https://gis.stackexchange.com/a/149243/25830 */
-html {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
-*, *:before, *:after {
-    -webkit-box-sizing: inherit;
-    -moz-box-sizing: inherit;
-    box-sizing: inherit;
-}
-
 html, body {
     height: 100%;
     padding: 0;
     margin: 0;
-    display: block;
     background: white;
 }
 
@@ -67,8 +54,8 @@ html, body {
     height: 100%;
 }
 
-#reset .easy-button-button.disabled {
-    height: 0;
+.disabled {
+    display: hidden;
 }
 
 /*
