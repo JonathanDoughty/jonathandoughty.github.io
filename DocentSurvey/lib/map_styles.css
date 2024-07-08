@@ -1,0 +1,78 @@
+/* Slightly adapted from https://gis.stackexchange.com/a/149243/25830 */
+html, body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background: white;
+}
+
+.container {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.header {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    padding: 0 1rem;
+    text-align: center;
+}
+
+.title {
+    /* Fallback for calc / vmin */
+    font-size: 1rem;
+    font-size: calc( 1vmin + 1rem);
+}
+
+.header-icon {
+    position: absolute;
+    right: 10px;
+}
+
+.map-container {
+    height: 100%;
+    /* Fallback for vmin */
+    padding: 0px 1rem 1rem 1rem;
+    padding: 0px 1vmin 1vmin 1vmin;
+}
+
+.map-frame {
+    height: 100%;
+    width: 100%;
+    /*   We use outline over border as has issues in some cases */
+    outline: 1px solid black;
+}
+
+#map-id {
+    height: 100%;
+}
+
+.disabled {
+    display: hidden;
+}
+
+/*
+Support for browsers that DON'T support Flexbox uses 100% height on the map-container defined above.
+Map will at least render, for the small amount of browsers that DON'T support flexbox. Users will just have to scroll abit ¯\_(ツ)_/¯
+*/
+@supports (display: flex) {
+    .map-container {
+        height: 0;
+        -webkit-box-flex: 1;
+        -ms-flex: 1 0 auto;
+        flex: 1 0 auto;
+    }
+
+    .map-frame {
+        -webkit-box-flex: 1;
+        -ms-flex: 1 0 auto;
+        flex: 1 0 auto;
+    }
+}
